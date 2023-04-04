@@ -8,7 +8,7 @@ class Alien_bonus (pygame.sprite.Sprite) :
 	
 		super ().__init__ ()
 	
-		self.image = pygame.image.load ("../../images/bonus/alien_bonus.png").convert_alpha ()
+		self.image = pygame.image.load ("../images/bonus/alien_bonus.png").convert_alpha ()
 		
 		if (direction == "right") :
 

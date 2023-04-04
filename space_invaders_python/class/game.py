@@ -18,7 +18,7 @@ class Game :
     def __init__ (self) -> None :
 
         pygame .display.set_caption ("Space Invaders")
-        pygame_icon = pygame.image.load ("../../images/aliens/alien_2.png")
+        pygame_icon = pygame.image.load ("../images/aliens/alien_2.png")
         pygame.display.set_icon (pygame_icon)
 
         # Spaceship Setup
@@ -27,7 +27,7 @@ class Game :
 
         # Health and Score Setup
         self.lives = 3
-        self.live_spaceship = pygame.image.load ("../../images/spaceship/spaceship.png").convert_alpha ()
+        self.live_spaceship = pygame.image.load ("../images/spaceship/spaceship.png").convert_alpha ()
         self.live_x_start_position = SCREEN_WIDTH - (self.live_spaceship.get_size ()[0] * 3 + 20)
 
         self.score = 0
@@ -62,14 +62,14 @@ class Game :
         self.extra_spawn_time = randint (400, 800)
 
         # Audio
-        music = pygame.mixer.Sound ("../../audio/music.wav")
+        music = pygame.mixer.Sound ("../audio/music.wav")
         music.set_volume (0.2)
         music.play (loops = - 1)
 
-        self.laser_sound = pygame.mixer.Sound ('../../audio/laser.wav')
+        self.laser_sound = pygame.mixer.Sound ('../audio/laser.wav')
         self.laser_sound.set_volume (0.2)
 
-        self.explosion_sound = pygame.mixer.Sound ('../../audio/explosion.wav')
+        self.explosion_sound = pygame.mixer.Sound ('../audio/explosion.wav')
         self.explosion_sound.set_volume (0.5)
 
     def create_obstacle (self, 
