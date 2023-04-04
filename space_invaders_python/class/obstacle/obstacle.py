@@ -1,6 +1,6 @@
 import pygame
 
-class Obstacle(pygame.sprite.Sprite) :
+class Obstacle (pygame.sprite.Sprite) :
 
     def __init__ (self, 
                   size, 

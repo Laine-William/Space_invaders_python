@@ -1,13 +1,13 @@
 import pygame
 import sys
 from random import randint
-from game import Game
+from game.game import Game
 
 class Main :
 
     def __init__ (self) :
 
-        self.background = pygame.image.load ("../images/background/game_background.png").convert_alpha ()
+        self.background = pygame.image.load ("../../images/background/game_background.png").convert_alpha ()
         self.background = pygame.transform.scale (self.background, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
     def create_lines_spacing (self) :

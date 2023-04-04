@@ -1,5 +1,5 @@
 import pygame 
-from laser import Laser
+from laser.laser import Laser
 
 class Spaceship (pygame.sprite.Sprite) :
 
@@ -10,7 +10,7 @@ class Spaceship (pygame.sprite.Sprite) :
 
 		super ().__init__ ()
 
-		self.image = pygame.image.load ("../images/spaceship/spaceship.png").convert_alpha ()
+		self.image = pygame.image.load ("../../images/spaceship/spaceship.png").convert_alpha ()
 
 		self.rect = self.image.get_rect (midbottom = position)
 		
@@ -26,7 +26,7 @@ class Spaceship (pygame.sprite.Sprite) :
 
 		self.lasers = pygame.sprite.Group ()
 
-		self.laser_sound = pygame.mixer.Sound ("../audio/laser.wav")
+		self.laser_sound = pygame.mixer.Sound ("../../audio/laser.wav")
 		self.laser_sound.set_volume (0.5)
 
 	def press_keyboard (self) -> None :
