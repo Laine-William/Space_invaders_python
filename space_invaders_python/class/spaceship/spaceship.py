@@ -1,5 +1,5 @@
 import pygame 
-from laser.laser import Laser
+from Laser.laser import Laser
 
 class Spaceship (pygame.sprite.Sprite) :
 

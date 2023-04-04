@@ -1,9 +1,9 @@
 import pygame, sys
-from spaceship.spaceship import Spaceship
-import obstacle.obstacle
-from alien.alien import Alien 
+from Spaceship.spaceship import Spaceship
+import Obstacle.obstacle
+from Alien.alien import Alien 
 
-from alien_bonus.alien_bonus import Alien_bonus
+from Alien_bonus.alien_bonus import Alien_bonus
 
 from laser.laser import Laser
 from random import choice, randint
