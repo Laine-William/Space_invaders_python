@@ -1,7 +1,7 @@
 import pygame
 import sys
 from random import randint
-from Game.game import Game
+from game import Game
 
 class Main :
 

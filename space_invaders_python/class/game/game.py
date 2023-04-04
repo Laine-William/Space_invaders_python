@@ -1,11 +1,11 @@
 import pygame, sys
-from Spaceship.spaceship import Spaceship
-import Obstacle.obstacle
-from Alien.alien import Alien 
+from spaceship import Spaceship
+import obstacle
+from alien import Alien 
 
-from Alien_bonus.alien_bonus import Alien_bonus
+from alien_bonus import Alien_bonus
 
-from laser.laser import Laser
+from laser import Laser
 from random import choice, randint
 
 SCREEN_WIDTH = 600
